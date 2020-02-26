@@ -1,0 +1,68 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400&display=swap");
+
+/* Variables */
+:root {
+  --primaryColor: #cccccc;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #f0f0f0;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --mainBorderRadius: 0.25rem;
+}
+
+/*  Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, var(--primaryColor), var(--mainGrey));
+}
+
+h1 {
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+/* Buttons */
+.btn {
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  border: 2px solid var(--mainBlack);
+  padding: 0.45rem 0.8rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: var(--mainBorderRadius);
+  background: transparent;
+  margin: 0.25rem;
+}
+
+.btn:hover {
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+}
+
+/* Counter */
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 3rem;
+}
+
+#counter {
+  font-size: 10rem;
+}
